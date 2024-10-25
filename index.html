@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deploy</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div id="informacoes"></div>
+
+    <button onclick="sairdaconta(event)" id="submitsair">Sair da conta</button>
+
+    <section class="primeiro-container">
+
+        <div class="primeiro-container-div">
+
+            <div class="primeiro-container-div2">
+                <h2>Criação de conta</h2>
+            </div>
+
+            <form action="">
+                <div>
+                    <h3 for="name">Insira seu nome completo</h3>
+                    <input type="text" name="name" id="nome" required placeholder="nome">
+                </div>
+                <div>
+                    <h3 for="email">Insira seu nome e-mail</h3>
+                    <input type="email" name="email" id="email" required placeholder="email">
+                </div>
+                <div>
+                    <h3 for="password">Insira uma senha</h3>
+                    <input type="password" name="password" id="senha" placeholder="senha">
+                </div>
+
+
+
+                <button id="submit" onclick="cadastrar(event)">Confirmar</button>
+
+            </form>
+
+            <div class="primeiro-container-div3">
+                <h3>Agradecemos a sua confiança!</h3>
+            </div>
+
+        </div>
+
+        <div class="primeiro-container-div">
+
+            <div class="primeiro-container-div2">
+                <h2>Login de conta</h2>
+            </div>
+           
+                <div>
+                    <h3 for="name">Insira seu nome</h3>
+                    <input type="text" name="name" id="nome_login" required placeholder="nome">
+                </div>
+                <div>
+                    <h3 for="password">Insira sua senha</h3>
+                    <input type="password" name="password" id="senha_login" placeholder="senha">
+                </div>
+
+            <div class="primeiro-container-div3">
+                <h3>Agradecemos a sua confiança!</h3>
+            </div>
+
+            <button id="submit_login" onclick="logar(event)">Logar</button>
+
+        </div>
+
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>

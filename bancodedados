@@ -1,0 +1,17 @@
+drop database deploy;
+create database deploy;
+use deploy;
+ 
+create table usuarios (
+id int not null auto_increment primary key,
+nome varchar(255) not null,
+email varchar(255) not null,
+senha varchar(255) not null,
+status enum ('Ativo', 'Inativo') default ('Ativo'),
+created_at timestamp default current_timestamp 
+);
+
+insert into usuarios(nome, email, senha)
+values("Isadora Viott", "isadora@gmail.com", "1234");
+
+SELECT * FROM usuarios
